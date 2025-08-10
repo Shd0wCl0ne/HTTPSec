@@ -21,10 +21,11 @@ It identifies the presence and configuration quality of key security-related HTT
   - Expect-CT (deprecated)
   - Referrer-Policy
   - Clear-Site-Data
-- Colorized CLI output with PASS/WARN/FAIL indicators
-- Best-practice value checks for each header
-- Works without any external dependencies (pure Go, single file)
-- Can run as a single script using `go run`
+- Detects missing or misconfigured headers
+- Color-coded PASS / WARN / FAIL / INFO output
+- Highlights problematic values directly in the header string
+- Lightweight and dependency-free
+- Single-file executable - easy to run anywhere just `go run`
 
 ## Installation
 
@@ -39,7 +40,10 @@ Usage
 Run directly without building:
 
 ```bash
-go run httpsec.go https://example.com
+httpsec [flags] <url>
+
+Flags:
+  -h, --help    Show help message
 ```
 
 Options
@@ -92,5 +96,10 @@ Other flags:
 
 ```
 
+Screenshots
+Sample Output – Status Column and Detailed Header Values
+![Alt text](screenshots/1.png)
+
+![Alt text](screenshots/2.png)
 
 
