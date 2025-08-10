@@ -97,9 +97,14 @@ Other flags:
 ```
 
 Screenshots
-Sample Output – Status Column and Detailed Header Values
+Sample Output - Status Column and Detailed Header Values
+
+PoC 1
 ![Alt text](screenshots/1.png)
 
+PoC 2
 ![Alt text](screenshots/2.png)
 
+PoC 3
+![Alt text](screenshots/3.png)
 
